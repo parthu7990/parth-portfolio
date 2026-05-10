@@ -1,0 +1,44 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "Portfolio work or personal project",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "image": { "type": "string" },
+        "link": { "type": "string" },
+        "github": { "type": "string" },
+        "tech": { "type": "array", "items": { "type": "string" } },
+        "size": { "type": "string", "enum": ["small", "medium", "large"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "description", "image", "createdAt"]
+    },
+    "Certificate": {
+      "title": "Certificate",
+      "description": "Professional or technical certification",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "issuer": { "type": "string" },
+        "date": { "type": "string" },
+        "link": { "type": "string" },
+        "type": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "issuer", "date", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/projects/{projectId}": {
+      "schema": "Project",
+      "description": "Collection of portfolio projects"
+    },
+    "/certificates/{certificateId}": {
+      "schema": "Certificate",
+      "description": "Collection of certifications"
+    }
+  }
+}
