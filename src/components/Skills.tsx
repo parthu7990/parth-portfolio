@@ -1,30 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { skillCategories } from '../data/skills';
 
 const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Backend Core",
-      skills: ["Python", "Django", "PostgreSQL", "API Integration", "Node.js"]
-    },
-    {
-      title: "Frontend Craft",
-      skills: ["React", "TypeScript", "Three.js", "Framer Motion", "GSAP"]
-    },
-    {
-      title: "Styling & UI",
-      skills: ["Tailwind CSS", "Bootstrap", "HTML5", "CSS3", "Responsive Design"]
-    },
-    {
-      title: "Tools & DevOps",
-      skills: ["GitHub", "Git", "Vercel", "Linux", "UI/UX Design"]
-    }
-  ];
-
   return (
-    <section id="skills" className="py-24 px-6 relative">
+    <section id="skills" className="py-20 md:py-24 px-5 sm:px-6 relative">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
+        <div className="text-center mb-16 md:mb-20">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -32,10 +14,16 @@ const Skills = () => {
           >
             TECH OVERVIEW
           </motion.div>
-          <h3 className="text-4xl md:text-5xl font-display font-bold">Weaponry of Choice</h3>
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-3xl sm:text-4xl md:text-5xl font-display font-bold"
+          >
+            Weaponry of <span className="text-gradient inline-block pb-2">Choice</span>
+          </motion.h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {skillCategories.map((category, i) => (
             <motion.div
               key={category.title}
@@ -47,8 +35,10 @@ const Skills = () => {
             >
               {/* Animated glow on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              
-              <h4 className="text-lg font-display font-medium mb-6 text-white/90 relative z-10">{category.title}</h4>
+
+              <h4 className="text-lg font-display font-medium mb-6 text-white/90 relative z-10">
+                {category.title}
+              </h4>
               <div className="flex flex-wrap gap-3 relative z-10">
                 {category.skills.map((skill) => (
                   <span
@@ -59,26 +49,37 @@ const Skills = () => {
                   </span>
                 ))}
               </div>
-              
+
               {/* Background accent */}
               <div className="absolute -bottom-10 -right-10 text-8xl font-display font-black text-white/5 select-none transition-transform duration-700 group-hover:-translate-y-5">
                 {i + 1}
               </div>
+
+              {/* Bottom progress bar */}
+              <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-primary to-secondary group-hover:w-full transition-all duration-700" />
             </motion.div>
           ))}
         </div>
-        
-        {/* Animated Marquee (Mock) */}
-        <div className="mt-20 overflow-hidden relative border-y border-white/5 py-10">
-          <div className="flex animate-[marquee_30s_linear_infinite] whitespace-nowrap gap-20 items-center">
+
+        {/* Animated Marquee */}
+        <div className="mt-16 md:mt-20 overflow-hidden relative border-y border-white/5 py-8 md:py-10">
+          <div className="flex animate-marquee whitespace-nowrap gap-16 md:gap-20 items-center">
             {['PYTHON', 'DJANGO', 'REACT', 'POSTGRESQL', 'GIT', 'THREE.JS', 'GSAP', 'TAILWIND'].map((item) => (
-              <span key={item} className="text-5xl md:text-7xl font-display font-black text-transparent stroke-white/20" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.1)' }}>
+              <span
+                key={item}
+                className="text-4xl sm:text-5xl md:text-7xl font-display font-black text-transparent"
+                style={{ WebkitTextStroke: '1px rgba(255,255,255,0.1)' }}
+              >
                 {item}
               </span>
             ))}
             {/* Duplicate for seamless effect */}
             {['PYTHON', 'DJANGO', 'REACT', 'POSTGRESQL', 'GIT', 'THREE.JS', 'GSAP', 'TAILWIND'].map((item) => (
-              <span key={`dup-${item}`} className="text-5xl md:text-7xl font-display font-black text-transparent stroke-white/20" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.1)' }}>
+              <span
+                key={`dup-${item}`}
+                className="text-4xl sm:text-5xl md:text-7xl font-display font-black text-transparent"
+                style={{ WebkitTextStroke: '1px rgba(255,255,255,0.1)' }}
+              >
                 {item}
               </span>
             ))}
@@ -90,3 +91,4 @@ const Skills = () => {
 };
 
 export default Skills;
+

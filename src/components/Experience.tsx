@@ -8,40 +8,40 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Python Django Development Intern",
-      company: "Tech Innovation IT Solution",
-      period: "2026 – Present",
-      location: "Ahmedabad, India",
-      role: "Architecting scalable backend systems, optimizing database queries, and building RESTful APIs using Django Rest Framework for production-level applications.",
-      type: "internship"
-    }
+      title: 'Python Django Development Intern',
+      company: 'Tech Innovation IT Solution',
+      period: '2026 – Present',
+      location: 'Ahmedabad, India',
+      role: 'Architecting scalable backend systems, optimizing database queries, and building RESTful APIs using Django Rest Framework for production-level applications.',
+      type: 'internship',
+    },
   ];
 
   const education = [
     {
-      degree: "MCA — Sankalchand Patel College of Engineering",
-      period: "2024 - 2026",
-      status: "Completed",
-      desc: "Specialized in advanced web architectures and software engineering principles."
+      degree: 'MCA — Sankalchand Patel College of Engineering',
+      period: '2024 - 2026',
+      status: 'Completed',
+      desc: 'Specialized in advanced web architectures and software engineering principles.',
     },
     {
-      degree: "B.Com — D.L. Patel Commerce College",
-      period: "2021 - 2024",
-      status: "Completed",
-      desc: "Graduated with honors, focusing on business management and digital commerce."
+      degree: 'B.Com — D.L. Patel Commerce College',
+      period: '2021 - 2024',
+      status: 'Completed',
+      desc: 'Graduated with honors, focusing on business management and digital commerce.',
     },
     {
-      degree: "HSC — Shree Triveni High School",
-      period: "2021",
-      status: "Completed",
-      desc: "Science Stream with focus on Mathematics and Computer Science."
-    }
+      degree: 'HSC — Shree Triveni High School',
+      period: '2021',
+      status: 'Completed',
+      desc: 'Science Stream with focus on Mathematics and Computer Science.',
+    },
   ];
 
   return (
-    <section id="experience" className="py-24 px-6 relative">
+    <section id="experience" className="py-20 md:py-24 px-5 sm:px-6 relative">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-14 md:mb-16">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -49,17 +49,21 @@ const Experience = () => {
           >
             Trajectory
           </motion.h2>
-          <h3 className="text-4xl md:text-5xl font-display font-bold">Career & Learning</h3>
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold">
+            Career & <span className="text-gradient inline-block pb-2">Learning</span>
+          </h3>
         </div>
 
         {/* Tab System */}
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-10 md:mb-12">
           <div className="glass p-1.5 rounded-2xl flex gap-2">
             <button
               onClick={() => setActiveTab('career')}
               className={cn(
-                "px-8 py-3 rounded-xl text-sm font-display font-bold transition-all duration-300",
-                activeTab === 'career' ? "bg-primary text-white shadow-[0_0_20px_rgba(139,92,246,0.3)]" : "text-white/40 hover:text-white"
+                'px-5 sm:px-8 py-3 rounded-xl text-xs sm:text-sm font-display font-bold transition-all duration-300',
+                activeTab === 'career'
+                  ? 'bg-primary text-white shadow-[0_0_20px_rgba(139,92,246,0.3)]'
+                  : 'text-white/40 hover:text-white'
               )}
             >
               Career Path
@@ -67,8 +71,10 @@ const Experience = () => {
             <button
               onClick={() => setActiveTab('education')}
               className={cn(
-                "px-8 py-3 rounded-xl text-sm font-display font-bold transition-all duration-300",
-                activeTab === 'education' ? "bg-primary text-white shadow-[0_0_20px_rgba(139,92,246,0.3)]" : "text-white/40 hover:text-white"
+                'px-5 sm:px-8 py-3 rounded-xl text-xs sm:text-sm font-display font-bold transition-all duration-300',
+                activeTab === 'education'
+                  ? 'bg-primary text-white shadow-[0_0_20px_rgba(139,92,246,0.3)]'
+                  : 'text-white/40 hover:text-white'
               )}
             >
               Learning Path
@@ -87,13 +93,13 @@ const Experience = () => {
                 className="space-y-8"
               >
                 {experiences.map((exp) => (
-                  <div key={exp.title} className="glass p-8 md:p-12 rounded-[2.5rem] relative group">
+                  <div key={exp.title} className="glass p-8 md:p-12 rounded-[2rem] md:rounded-[2.5rem] relative group hover:border-primary/40 transition-all duration-500">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary">
+                      <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
                         <Briefcase size={24} />
                       </div>
                       <div>
-                        <h4 className="text-2xl font-display font-bold">{exp.title}</h4>
+                        <h4 className="text-xl md:text-2xl font-display font-bold">{exp.title}</h4>
                         <p className="text-primary font-mono text-xs tracking-widest uppercase">{exp.company}</p>
                       </div>
                     </div>
@@ -120,17 +126,17 @@ const Experience = () => {
                 className="space-y-6"
               >
                 {education.map((edu) => (
-                  <div key={edu.degree} className="glass p-8 rounded-3xl flex flex-col md:flex-row md:items-center justify-between gap-6 border-l-4 border-primary/40">
+                  <div key={edu.degree} className="glass p-6 sm:p-8 rounded-3xl flex flex-col lg:flex-row lg:items-center justify-between gap-6 border-l-4 border-primary/40 hover:border-l-primary transition-all">
                     <div className="flex items-center gap-6">
                       <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center flex-shrink-0">
                         <GraduationCap size={28} className="text-white/60" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-display font-bold text-white mb-1">{edu.degree}</h4>
+                        <h4 className="text-base sm:text-lg font-display font-bold text-white mb-1">{edu.degree}</h4>
                         <p className="text-sm text-white/40">{edu.desc}</p>
                       </div>
                     </div>
-                    <div className="flex flex-col items-end gap-2 shrink-0">
+                    <div className="flex flex-row lg:flex-col items-center lg:items-end gap-4 lg:gap-2 shrink-0">
                       <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-mono uppercase tracking-widest">{edu.status}</span>
                       <span className="text-xs font-mono text-white/20">{edu.period}</span>
                     </div>
@@ -146,3 +152,4 @@ const Experience = () => {
 };
 
 export default Experience;
+
