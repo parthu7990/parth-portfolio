@@ -19,8 +19,8 @@ export const projects: Project[] = [
     image:
       'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&auto=format&fit=crop',
     size: 'medium',
-    link: 'https://github.com/parthu7990',
-    github: 'https://parth-portfolio-lovat-mu.vercel.app/',
+    link: 'https://parth-portfolio-lovat-mu.vercel.app/',
+    github: 'https://github.com/parthu7990/',
   },
   {
     title: 'Bloom Template',
