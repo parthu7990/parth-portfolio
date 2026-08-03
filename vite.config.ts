@@ -7,7 +7,7 @@ import { defineConfig } from 'vite';
 // The repo is "parth-portfolio", so assets are served from /parth-portfolio/.
 // If you deploy to a custom domain or the root, change this to base: '/'.
 export default defineConfig({
-  base: '/parth-portfolio/',
+  base: "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
