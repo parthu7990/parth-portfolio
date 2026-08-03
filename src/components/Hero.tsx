@@ -171,7 +171,7 @@ const Hero = () => {
             transition={{ duration: 4, repeat: Infinity, delay: 0.5 }}
             className="absolute top-8 left-2 sm:left-8 md:top-16 px-3 py-2 rounded-xl glass text-[10px] sm:text-xs font-mono text-cyan-300"
           >
-            🐍 Django
+            🍃 Django
           </motion.div>
           <motion.div
             animate={{ y: [0, 12, 0] }}
@@ -185,7 +185,7 @@ const Hero = () => {
             transition={{ duration: 3.5, repeat: Infinity, delay: 1.5 }}
             className="absolute top-1/3 -right-2 sm:right-0 md:right-4 px-3 py-2 rounded-xl glass text-[10px] sm:text-xs font-mono text-amber-300"
           >
-            🚀 Python
+            🐍 Python
           </motion.div>
         </div>
 

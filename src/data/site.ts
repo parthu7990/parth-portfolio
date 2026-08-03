@@ -11,10 +11,10 @@ export const siteConfig = {
   email: 'parth20098@gmail.com',
   location: 'Ahmedabad, Gujarat, India',
   github: 'https://github.com/parthu7990',
-  linkedin: 'https://www.linkedin.com/in/parthprajapati',
+  linkedin: 'https://www.linkedin.com/in/parth-prajapati-257b66325',
   instagram: 'https://www.instagram.com/parth_.7990',
   twitter: 'https://twitter.com/parthprajapati',
-  resumeUrl: '#',
+  resumeUrl: 'https://drive.google.com/file/d/1XjbYc0C2FOoxfgFk-XaQIf1b8TQgHCEf/view?usp=drive_link',
   available: true,
 };
 

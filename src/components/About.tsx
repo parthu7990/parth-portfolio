@@ -5,10 +5,10 @@ import { aboutImage } from '../data/site';
 
 const About = () => {
   const stats = [
-    { label: 'Frontend Exp', value: '3+' },
-    { label: 'Projects', value: '15+' },
-    { label: 'Frameworks', value: '10+' },
-    { label: 'Happy Clients', value: '20+' },
+    { label: 'Frontend Exp', value: 'Fresher' },
+    { label: 'Projects', value: '6+' },
+    { label: 'Frameworks', value: '2+' },
+    { label: 'Happy Clients', value: '4+' },
   ];
 
   return (
