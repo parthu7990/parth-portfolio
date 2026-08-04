@@ -43,7 +43,7 @@ export const projects: Project[] = [
     image:
       'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&auto=format&fit=crop',
     size: 'medium',
-    link: 'https://github.com/parthu7990',
+    link: 'https://restaurant-management-system-five-theta.vercel.app/',
     github: 'https://github.com/parthu7990/Restaurant-Management-System',
   },
   {
