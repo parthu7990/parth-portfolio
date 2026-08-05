@@ -55,7 +55,7 @@ export const projects: Project[] = [
     image:
       'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&auto=format&fit=crop',
     size: 'medium',
-    link: 'https://parth-psk-project.up.railway.app/',
+    link: 'https://ssm-project-xi.vercel.app/',
     github: 'https://github.com/parthu7990/SSM-PROJECT',
   },
   {
