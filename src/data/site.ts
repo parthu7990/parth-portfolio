@@ -23,4 +23,3 @@ export const profileImage =
 
 export const aboutImage =
   'https://cdn.phototourl.com/free/2026-05-10-1106c44b-e4fc-4988-ba45-ea9b0cb448ae.jpg';
-
