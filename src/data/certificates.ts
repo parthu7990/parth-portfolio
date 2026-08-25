@@ -65,5 +65,11 @@ export const certificates: Certificate[] = [
     link: 'https://drive.google.com/file/d/1PgMAMWhTqmW2DG6BbmC2ieJoTM0EEbqK/view?usp=sharing',
     type: 'Skill Development',
   },
+  {
+    title: 'Python Programming Professional Certificate',
+    issuer: 'Unified Mentor',
+    date: '25 August 2026',
+    link: 'https://drive.google.com/file/d/1PgMAMWhTqmW2DG6BbmC2ieJoTM0EEbqK/view?usp=sharing',
+    type: 'Certification',
+  },
 ];
-
