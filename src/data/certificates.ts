@@ -41,7 +41,7 @@ export const certificates: Certificate[] = [
     title: 'Young professional ',
     issuer: 'TCS iON',
     date: ' Feb 2025',
-    link: 'https://drive.google.com/file/d/1TP-rszPcAYVW9x28B2jklfEKhy9V_CeD/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/16n4XWdsLZUsGM53Bn2m0-Gw1eGfq6jg7/view?usp=drivesdk',
     type: 'Soft Skills',
   },
   {
