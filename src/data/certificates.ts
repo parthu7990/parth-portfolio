@@ -76,7 +76,7 @@ export const certificates: Certificate[] = [
     title: 'Webflow Course',
     issuer: 'Simplilearn',
     date: '31 August 2026',
-    link: 'https://simpli-web.app.link/e/Ymewt1mM25b',
+    link: 'https://certificates.simplicdn.net/share/10672482_9349673_1788153005526.png',
     type: 'Skill Development',
   },
 ];
