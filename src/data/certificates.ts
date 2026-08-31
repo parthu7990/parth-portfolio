@@ -77,6 +77,6 @@ export const certificates: Certificate[] = [
     issuer: 'Simplilearn',
     date: '31 August 2026',
     link: 'https://simpli-web.app.link/e/Ymewt1mM25b',
-    type: 'Certification',
+    type: 'Skill Development',
   },
 ];
