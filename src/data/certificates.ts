@@ -72,4 +72,11 @@ export const certificates: Certificate[] = [
     link: 'https://drive.google.com/file/d/1IW-V4Dy-bQTci_4kZCWUp4ZKibqpnq-n/view?usp=drivesdk',
     type: 'Certification',
   },
+  {
+    title: 'Webflow Course',
+    issuer: 'Simplilearn',
+    date: '31 August 2026',
+    link: 'https://simpli-web.app.link/e/Ymewt1mM25b',
+    type: 'Certification',
+  },
 ];
