@@ -19,7 +19,7 @@ export const siteConfig = {
 };
 
 export const profileImage =
-  'https://cdn.phototourl.com/member/2026-05-10-b17ced9e-d1c5-4829-947a-1f6c89ec2640.jpg';
+  'https://kommodo.ai/i/MEGCm8SPkCWnmDfUkYNy';
 
 export const aboutImage =
   'https://cdn.phototourl.com/free/2026-05-10-1106c44b-e4fc-4988-ba45-ea9b0cb448ae.jpg';
