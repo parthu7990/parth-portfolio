@@ -22,4 +22,4 @@ export const profileImage =
   'https://picturetolink.com/i/TnFuiMe5dt.png';
 
 export const aboutImage =
-  'https://cdn.phototourl.com/free/2026-05-10-1106c44b-e4fc-4988-ba45-ea9b0cb448ae.jpg';
+  'https://picturetolink.com/i/uYVskKOCOx.png';
